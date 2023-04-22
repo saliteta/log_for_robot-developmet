@@ -15,3 +15,9 @@ git checkout v1.13.2
 make distclean
 git submodule update –-recursive
 ```
+
+# Run PX4-GAZEBO
+```
+make px4_sitl gazebo
+```
+It takes more than 10 mins, be patient
