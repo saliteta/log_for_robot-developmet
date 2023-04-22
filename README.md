@@ -59,3 +59,11 @@ source {PX4-Autopilot_location(absolute location)}/Tools/setup_gazebo.bash {PX4-
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:{PX4-Autopilot_location(absolute location)}
 export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:{PX4-Autopilot_location(absolute location)}/Tools/sitl_gazebo
 ```
+
+# Run Simulation
+```
+roslaunch mavros px4.launch fcu_url:="udp://:14540@127.0.0.1:14557"
+roslaunch px4 posix_sitl.launch
+```
+
+```
