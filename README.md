@@ -50,3 +50,12 @@ wget https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage
 chmod +x ./QGroundControl.AppImage
 ./QGroundControl.AppImage
 ```
+
+# Install Gazebo Simulator
+```
+source /opt/ros/melodic/setup.bash
+source /home/{User name}/catkin_ws/devel/setup.bash
+source {PX4-Autopilot_location(absolute location)}/Tools/setup_gazebo.bash {PX4-Autopilot_location(absolute location)} {PX4-Autopilot_location(absolute location)}/build/px4_sitl_default
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:{PX4-Autopilot_location(absolute location)}
+export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:{PX4-Autopilot_location(absolute location)}/Tools/sitl_gazebo
+```
