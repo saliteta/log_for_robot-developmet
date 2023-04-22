@@ -21,3 +21,9 @@ git submodule update –-recursive
 make px4_sitl gazebo
 ```
 It takes more than 10 mins, be patient
+- If there is some error occured, it may because of some packets don't match
+Try this:
+```
+sudo apt install ant
+sudo apt upgrade libignition-math2
+``
